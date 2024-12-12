@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DBZ-LEGACY</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow: hidden; /* Prevents scrolling */
+    }
+
+    #game {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div style="width:100%;height:100%;max-width:100%">
+    <div id="game"></div>
+  </div>
+  <script type="text/javascript">
+    EJS_player = '#game';
+    EJS_biosUrl = ''; // Leave this empty or provide a valid BIOS file path if needed
+    EJS_pathtodata = 'data'; // Path to the data folder
+    EJS_gameUrl = 'dbz.gba'; // Url to the Game ROM
+    EJS_core = 'gba'; // Core to be used (GameBoy Advance)
+  </script>
+  <script src="data/loader.js"></script> <!-- Ensure the loader.js is in the 'data' folder -->
+</body>
+</html>
